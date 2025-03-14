@@ -1,0 +1,45 @@
+h1 {
+  color: darkcyan;
+  font-family: monospace;
+}
+
+h3 {
+  color: darkcyan;
+  font-family: monospace;
+}
+
+p {
+  font-family: monospace;
+}
+
+.table {
+  background-color: cyan;
+  backface-visibility: visible;
+  border: 5px;
+}
+
+.buttons {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+  text-align: center;
+}
+
+button {
+  height: 40px;
+  width: 100px;
+}
+
+.text {
+  font-size: x-large;
+}
+
+img#myphoto {
+  border-radius: 50%;
+  border-width: 5px;
+  height: 100%;
+  width: 100%;
+}
