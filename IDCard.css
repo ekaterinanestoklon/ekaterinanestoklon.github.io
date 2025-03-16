@@ -1,67 +1,121 @@
-h1 {
-  color: darkcyan;
-  font-family: monospace;
-}
-
-h3 {
-  color: darkcyan;
-  font-family: monospace;
-}
-
-p {
-  font-family: monospace;
-}
-
-.table {
-  background-color: cyan;
-  backface-visibility: visible;
-  border: 5px;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center; /* Center the buttons horizontally */
-  gap:10%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: space-around;
-  text-align: center;
-}
-
-.bubble-btn {
-  background-color: #008CBA;
-  color:white;
-  border: none;
-  border-radius: 50px;
-  padding: 20 px 40 px;
-  font-size: 16px;
-  position: relative;
-  transition: transform 0.3s;
-}
-
-.bubble-btn:hover {
-  animation: bubble 0.4s ease-out;
-}
-
-@keyframes bubble {
-  0%{
-    transform: scale(1);
+ /* General page styles */
+ body {
+    font-family: "Arial", sans-serif; /* Fallback font */
+    margin: 0;
+    padding: 0;
+    background-color: #e0f8f1; /* Very light mint green background */
+    color: #212121; /* Dark text for readability */
   }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 
-.text {
-  font-size: x-large;
-}
+  /* Apply handwriting font to the header */
+  header {
+    font-family: "Dancing Script", cursive; /* Handwriting font */
+    background-color: #00bfae; /* Fresh mint green */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for header */
+  }
 
-img#myphoto {
-  border-radius: 50%;
-  border-width: 5px;
-  height: 100%;
-  width: 100%;
-}
+  .content {
+    padding: 20px;
+  }
+
+  /* Buttons with shadow */
+  .button {
+    background-color: #00bfae; /* Bright mint button */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for buttons */
+  }
+
+  .button:hover {
+    background-color: #a0d8d3; /* Pale mint on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+  }
+
+  .bubble-btn {
+    height:50px;
+    width:150px;
+    display:block;
+    background-color:  #00bfae; 
+    color:white;
+    border: none;
+    border-radius: 10px;
+    padding: 12 px 24 px;
+    font-size: 1em;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s;
+    display: block;
+    margin: 50px;
+  }
+  
+  .bubble-btn:hover {
+    animation: bubble 0.4s ease-out;
+  }
+  
+  @keyframes bubble {
+    0%{
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .button-container {
+    display: block;
+    justify-content: flex; /* Center the buttons horizontally */
+    margin-bottom: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    text-align: center;
+  }
+
+  /* Card Style with shadow */
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for cards */
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+  .card-header {
+    font-size: 1.5em;
+    color: #006f64; /* Dark mint for contrast */
+    margin-bottom: 10px;
+  }
+
+  .card-body {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    color: #555; /* Slightly lighter text for the card */
+  }
+  #myphoto {
+    max-width: 300px;
+    margin-right: 20px;
+    border-radius: 50%;
+    
+    border: 5px solid #00bfae;
+  }
+  /* Links */
+  a {
+    color: #00bfae; /* Mint links */
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }

@@ -3,73 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hi, I'm Ekaterina</title>
+    <title>Homepage Ekaterina Nestoklon</title>
+
+    <!-- Google Fonts - Dancing Script for Handwriting Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="IDCard.css" />
+    
   </head>
-  <body
-    background="images/cubiks-rube-some-rubiks-cube-art-by-me-v0-5nr02jr5k9d81.webp"
-  >
-    <table class="table" bgcolor="#FFFFFF" border="1">
-      <tr>
-        <td>
+  <body>
+    <header>Welcome to my Homepage!</header>
+
+    <div class="content">
+      <div class="card">
+        <div class="card-header">Hi, I'm Ekaterina!</div>
+        <div class="card-body">
+          <img src="images/Ekaterina.png" alt="My profile image" id="myphoto" />
           <div>
-            <img
-              src="images/Ekaterina.png"
-              alt="My profile image"
-              id="myphoto"
-            />
+          <p>
+            I'm a math geek who thrives on solving equations and diving deep
+            into formulas that most people would find impossible (but I find
+            fascinating!). When I'm not working through algebraic expressions, I
+            enjoy tackling puzzles, playing chess, and getting lost in the world
+            of science, but also I like sport.
+          </p>
+          <p>
+            I have a wonderful family. My husband is my partner-in-crime, and
+            together we've got two amazing kids who keep me on my toes. I love
+            teaching them the wonders of math and science, even though they
+            occasionally outsmart me with their creative ideas!
+          </p>
+          <p>
+            Whether it's solving a Rubik's Cube or coming up with new ways to
+            trick my kids into doing their homework, I'm always up for a
+            challenge. Life is one big equation, and I'm always ready to solve
+            it — one puzzle at a time!
+          </p>
           </div>
-        </td>
-        <td>
-          <div class="text">
-            <h1>Hi, I'm Ekaterina</h1>
-            <p>
-              I'm a math geek who thrives on solving equations and diving deep
-              into formulas that most people would find impossible (but I find
-              fascinating!). When I'm not working through algebraic expressions,
-              I enjoy tackling puzzles, playing chess, and getting lost in the
-              world of science, but also I like sport.
-            </p>
-            <p>
-              I have a wonderful family. My husband is my partner-in-crime, and
-              together we've got two amazing kids who keep me on my toes. I love
-              teaching them the wonders of math and science, even though they
-              occasionally outsmart me with their creative ideas!
-            </p>
-            <p>
-              Whether it's solving a Rubik's Cube or coming up with new ways to
-              trick my kids into doing their homework, I'm always up for a
-              challenge. Life is one big equation, and I'm always ready to solve
-              it — one puzzle at a time!
-            </p>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>
-          <h1>Let's play a Scissors, Rock or Paper game!</h1>
-        </td>
-      </tr>
-      <tr>
-        <td>
-            <h3>
-              Now you need to choose scissors, rock or paper
-            </h3>
+        </div>
+      </div>
+      <div class="content">
+        <div class="card">
+          <div class="card-header">Let's play a Scissors, Rock or Paper game!</div>
+          <div class="card-body">
             <div class="button-container"> 
-            <button class="bubble-btn" onclick="playGame('scissors')">Scissors</button>
-
-            <button class="bubble-btn" onclick="playGame('rock')">Rock</button>
-
-            <button class="bubble-btn" onclick="playGame('paper')">Paper</button>
+                <button class="bubble-btn" onclick="playGame('scissors')">Scissors</button>
+    
+                <button class="bubble-btn" onclick="playGame('rock')">Rock</button>
+    
+                <button class="bubble-btn" onclick="playGame('paper')">Paper</button>
             </div>
+            
+            <div id="result"></div>
           </div>
-        </td>
-        <td>
-          <div id="result"></div>
-        </td>
-      </tr>
-    </table>
+        </div>
+        <a href="#">View Details</a>
+      <button class="button">Edit Profile</button>
+    </div>    
     <script src="scissorsrockpaper.js"></script>
   </body>
 </html>
